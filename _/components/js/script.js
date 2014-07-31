@@ -96,4 +96,4 @@ var pixGrid = function(){
 			return theImage;
 	}
 
-})();//self executing function
+}();//self executing function
