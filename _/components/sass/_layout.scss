@@ -11,7 +11,7 @@ $medium : 47em;
 $large : 75em;
 //header 
 .layout {
-	padding: 3%;
+	padding: 0 3%;
 }
 
 
@@ -106,14 +106,31 @@ header {
 			}
 
 			a {
+				@include single-transition(all, .5s, ease-out);
 				display: block;
 				text-decoration: none;
 				padding: 5px 10px;
 				color: $paleryellow;
+
+				&:hover {
+					background: $orange;
+					a {
+						color: lighten($yellow, 30);
+					}
+				}
 			}//a
 		}//li
 	}//ul
 }//navigation
+
+//Speaker list
+.speakerlist {
+	@include at-breakpoint($medium) {
+		text-align: center;
+		@include background($darkerblue);
+	}
+
+}
 
 //footer
 
