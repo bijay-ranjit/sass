@@ -1,5 +1,5 @@
 var pixGrid = function(){
-
+//this is new change
 	//selecting our node
 	var myNode = document.querySelector('.pixgrid');
 
