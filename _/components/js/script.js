@@ -12,7 +12,6 @@ var pixGrid = function(){
 			var myOverlay = document.createElement('div');
 			myOverlay.id = 'overlay';
 			document.body.appendChild(myOverlay);
-
 			//overlay styles
 
 			myOverlay.style.position = 'absolute';
